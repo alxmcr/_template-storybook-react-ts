@@ -4,6 +4,7 @@ import {
   OutlineButton,
 } from '../../components/elements/Button';
 import { AppNavigation } from '../../components/sections/AppNavigation';
+import './OnePage.css';
 
 export default function OnePage() {
   return (
