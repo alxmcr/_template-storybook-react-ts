@@ -8,8 +8,8 @@ import AppHeader from '../../stories/components/sections/AppHeader';
 import './OnePage.scss';
 
 const WrapperOnePage = styled.div`
-  background-color: #fff;
-  color: #000;
+  background-color: ${(props) => props.theme.background};
+  color: ${(props) => props.theme.text};
   height: 100vh;
 `;
 
