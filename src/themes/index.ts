@@ -1,4 +1,4 @@
-import { AppStyledTheme } from '../@types/themeTypes';
+import { AppStyledTheme } from '../@types/styles/themeTypes';
 import { colors } from './colors';
 import { darkButtonStyles } from './dark';
 import { lightButtonStyles } from './light';

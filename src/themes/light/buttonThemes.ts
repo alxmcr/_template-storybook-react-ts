@@ -1,7 +1,7 @@
 import {
   StylesButtonGradientStates,
   StylesButtonStates,
-} from '../../@types/themeTypes';
+} from '../../@types/styles/themeTypes';
 import { colors } from '../colors';
 
 export const lightThemeBtnSolid: StylesButtonStates = {

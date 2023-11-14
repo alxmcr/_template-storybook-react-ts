@@ -1,4 +1,4 @@
-import { StylesButtonStates } from '../../@types/themeTypes';
+import { StylesButtonStates } from '../../@types/styles/themeTypes';
 import { colors } from '../colors';
 
 export const darkThemeBtnSolid: StylesButtonStates = {
