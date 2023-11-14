@@ -1,9 +1,7 @@
 import styled from 'styled-components';
-import {
-  DefaultButton,
-  GradientButton,
-  OutlineButton,
-} from '../../stories/components/elements/AppButtons';
+import { ButtonDefault } from '../../stories/components/buttons/ButtonDefault';
+import { ButtonGradient } from '../../stories/components/buttons/ButtonGradient';
+import { ButtonOutline } from '../../stories/components/buttons/ButtonOutline';
 import AppHeader from '../../stories/components/sections/AppHeader';
 import './OnePage.scss';
 
@@ -21,9 +19,9 @@ export default function OnePage() {
         <main className="one">
           <h1 className="one__title">One</h1>
           <div className="one__buttons">
-            <DefaultButton>Default</DefaultButton>
-            <OutlineButton>Outline</OutlineButton>
-            <GradientButton>Gradient</GradientButton>
+            <ButtonDefault>Default</ButtonDefault>
+            <ButtonOutline>Outline</ButtonOutline>
+            <ButtonGradient>Gradient</ButtonGradient>
           </div>
         </main>
       </WrapperOnePage>
