@@ -9,45 +9,47 @@ export const Button = styled.button`
 `;
 
 export const DefaultButton = styled(Button)`
-  background-color: ${(props) => props.theme.button.solid.default.background};
-  border: 1px solid ${(props) => props.theme.button.solid.default.borderColor};
-  color: ${(props) => props.theme.button.solid.default.text};
+  background-color: #21aa33;
+  border: 1px solid #21aa33;
+  color: #fff;
 
   &:hover {
-    background-color: ${(props) => props.theme.button.solid.hover.background};
-    border: 1px solid ${(props) => props.theme.button.solid.hover.borderColor};
-    color: ${(props) => props.theme.button.solid.hover.text};
+    background-color: #91aa33;
+    border: 1px solid #91aa33;
+    color: #fff;
   }
 `;
 
 export const OutlineButton = styled(Button)`
-  background-color: ${(props) => props.theme.button.outline.default.background};
-  border: 1px solid ${(props) => props.theme.button.outline.default.borderColor};
-  color: ${(props) => props.theme.button.outline.default.text};
+  background-color: transparent;
+  border: 1px solid #04aabb;
+  color: #04aabb;
 
   &:hover {
-    background-color: ${(props) => props.theme.button.outline.hover.background};
-    border: 1px solid ${(props) => props.theme.button.outline.hover.borderColor};
-    color: ${(props) => props.theme.button.outline.hover.text};
+    background-color: transparent;
+    border: 1px solid #54aabb;
+    color: #54aabb;
   }
 `;
 
 export const GradientButton = styled(Button)`
   background: linear-gradient(
-    135deg,
-    ${(props) =>
-      props.theme.button.gradient.default.gradientColors.gradientStart},
-    ${(props) => props.theme.button.gradient.default.gradientColors.gradientEnd}
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
   );
-  color: ${(props) => props.theme.button.gradient.default.text};
+  border: 1px solid #54aabb;
+  color: #fff;
 
   &:hover {
     background: linear-gradient(
-      135deg,
-      ${(props) =>
-        props.theme.button.gradient.hover.gradientColors.gradientStart},
-      ${(props) => props.theme.button.gradient.hover.gradientColors.gradientEnd}
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
     );
-    color: ${(props) => props.theme.button.gradient.hover.text};
+    border: 1px solid #54aabb;
+    color: #fff;
   }
 `;
