@@ -1,6 +1,7 @@
 import { RouteObject, createBrowserRouter } from 'react-router-dom';
 import OnePage from '../pages/OnePage';
 import TwoPage from '../pages/TwoPage';
+import { protectedLoader } from './loaders';
 
 export const routes: RouteObject[] = [
   {
@@ -12,6 +13,7 @@ export const routes: RouteObject[] = [
     id: 'two',
     path: '/',
     element: <TwoPage />,
+    loader: protectedLoader,
   },
 ];
 
