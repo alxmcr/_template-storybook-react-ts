@@ -2,8 +2,8 @@ import {
   DefaultButton,
   GradientButton,
   OutlineButton,
-} from '../../components/elements/Button';
-import { AppNavigation } from '../../components/sections/AppNavigation';
+} from '../../stories/components/elements/Button';
+import { AppNavigation } from '../../stories/components/sections/AppNavigation';
 import './OnePage.css';
 import styled from 'styled-components';
 

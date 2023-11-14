@@ -1,4 +1,4 @@
-import { AppNavigation } from '../../components/sections/AppNavigation';
+import { AppNavigation } from '../../stories/components/sections/AppNavigation';
 
 export default function TwoPage() {
   return (
