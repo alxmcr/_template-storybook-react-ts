@@ -3,7 +3,7 @@ import {
   DefaultButton,
   GradientButton,
   OutlineButton,
-} from '../../stories/components/elements/Button';
+} from '../../stories/components/elements/AppButton';
 import AppHeader from '../../stories/components/sections/AppHeader';
 import './OnePage.scss';
 

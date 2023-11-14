@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Button = styled.button`
+export const AppButton = styled.button`
   padding: 8px 16px;
   border: none;
   border-radius: 4px;
@@ -8,7 +8,7 @@ export const Button = styled.button`
   cursor: pointer;
 `;
 
-export const DefaultButton = styled(Button)`
+export const DefaultButton = styled(AppButton)`
   background-color: ${(props) => props.theme.button.solid.default.background};
   border: 1px solid ${(props) => props.theme.button.solid.default.borderColor};
   color: ${(props) => props.theme.button.solid.default.text};
@@ -20,7 +20,7 @@ export const DefaultButton = styled(Button)`
   }
 `;
 
-export const OutlineButton = styled(Button)`
+export const OutlineButton = styled(AppButton)`
   background-color: ${(props) => props.theme.button.outline.default.background};
   border: 1px solid ${(props) => props.theme.button.outline.default.borderColor};
   color: ${(props) => props.theme.button.outline.default.text};
@@ -32,7 +32,7 @@ export const OutlineButton = styled(Button)`
   }
 `;
 
-export const GradientButton = styled(Button)`
+export const GradientButton = styled(AppButton)`
   background: linear-gradient(
     135deg,
     ${(props) =>
