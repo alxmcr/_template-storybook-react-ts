@@ -1,9 +1,9 @@
-import { AppNavigation } from '../../stories/components/sections/AppNavigation';
+import AppHeader from '../../stories/components/sections/AppHeader';
 
 export default function TwoPage() {
   return (
     <>
-      <AppNavigation />
+      <AppHeader />
       <main className="two">
         <h1 className="two__title">Two</h1>
       </main>

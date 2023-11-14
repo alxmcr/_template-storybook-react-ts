@@ -4,7 +4,7 @@ import {
   GradientButton,
   OutlineButton,
 } from '../../stories/components/elements/Button';
-import { AppNavigation } from '../../stories/components/sections/AppNavigation';
+import AppHeader from '../../stories/components/sections/AppHeader';
 import './OnePage.scss';
 
 const WrapperOnePage = styled.div`
@@ -17,7 +17,7 @@ export default function OnePage() {
   return (
     <>
       <WrapperOnePage>
-        <AppNavigation />
+        <AppHeader />
         <main className="one">
           <h1 className="one__title">One</h1>
           <div className="one__buttons">
