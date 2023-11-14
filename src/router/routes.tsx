@@ -11,7 +11,7 @@ export const routes: RouteObject[] = [
   },
   {
     id: 'two',
-    path: '/',
+    path: '/two',
     element: <TwoPage />,
     loader: protectedLoader,
   },
