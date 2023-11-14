@@ -1,11 +1,11 @@
+import styled from 'styled-components';
 import {
   DefaultButton,
   GradientButton,
   OutlineButton,
 } from '../../stories/components/elements/Button';
 import { AppNavigation } from '../../stories/components/sections/AppNavigation';
-import './OnePage.css';
-import styled from 'styled-components';
+import './OnePage.scss';
 
 const WrapperOnePage = styled.div`
   background-color: #fff;
