@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ButtonDefault } from '.';
+import { ButtonOutline } from '.';
 
 const meta = {
-  title: 'atoms/buttons/ButtonDefault',
-  component: ButtonDefault,
+  title: 'atoms/buttons/ButtonOutline',
+  component: ButtonOutline,
   parameters: {
     layout: 'centered',
   },
@@ -11,7 +11,7 @@ const meta = {
   argTypes: {
     onClick: { action: 'clicked' },
   },
-} satisfies Meta<typeof ButtonDefault>;
+} satisfies Meta<typeof ButtonOutline>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

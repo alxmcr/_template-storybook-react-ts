@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import AppButtonDefaultxxxxx from '../../stories/components/buttons/AppButtonDefault';
 import { ButtonDefault } from '../../stories/components/buttons/ButtonDefault';
 import { ButtonGradient } from '../../stories/components/buttons/ButtonGradient';
 import { ButtonOutline } from '../../stories/components/buttons/ButtonOutline';
@@ -37,15 +36,35 @@ export default function OnePage() {
             <div className="one__buttons">
               <div className="one__wrapper">
                 <h3 className="one__h3">Default state</h3>
-                <AppButtonDefaultxxxxx onClick={handleDefaultClick}>
+                <ButtonDefault onClick={handleDefaultClick}>
                   Default
-                </AppButtonDefaultxxxxx>
+                </ButtonDefault>
               </div>
               <div className="one__wrapper">
                 <h3 className="one__h3">Disabled state</h3>
-                <AppButtonDefaultxxxxx onClick={handleDefaultClick} disabled>
+                <ButtonDefault onClick={handleDefaultClick} disabled>
                   Disabled
-                </AppButtonDefaultxxxxx>
+                </ButtonDefault>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
+          <section className="one-section">
+            <h2 className="one__subtitle">Outline button</h2>
+            <div className="one__buttons">
+              <div className="one__wrapper">
+                <h3 className="one__h3">Default state</h3>
+                <ButtonOutline onClick={handleDefaultClick}>
+                  Default
+                </ButtonOutline>
+              </div>
+              <div className="one__wrapper">
+                <h3 className="one__h3">Disabled state</h3>
+                <ButtonOutline onClick={handleDefaultClick} disabled>
+                  Disabled
+                </ButtonOutline>
               </div>
             </div>
           </section>
