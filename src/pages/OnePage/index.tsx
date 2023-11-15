@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { ButtonDefault } from '../../stories/components/buttons/ButtonSolid';
-import { ButtonGradient } from '../../stories/components/buttons/ButtonGradient';
 import { ButtonOutline } from '../../stories/components/buttons/ButtonOutline';
+import { ButtonSolid } from '../../stories/components/buttons/ButtonSolid';
 import AppHeader from '../../stories/components/sections/AppHeader';
 import './OnePage.scss';
 
@@ -20,10 +19,6 @@ export default function OnePage() {
     console.log('Outline click');
   };
 
-  const handleGradientClick = () => {
-    console.log('Gradient click');
-  };
-
   return (
     <>
       <WrapperOnePage>
@@ -36,15 +31,13 @@ export default function OnePage() {
             <div className="one__buttons">
               <div className="one__wrapper">
                 <h3 className="one__h3">Default state</h3>
-                <ButtonDefault onClick={handleDefaultClick}>
-                  Default
-                </ButtonDefault>
+                <ButtonSolid onClick={handleDefaultClick}>Default</ButtonSolid>
               </div>
               <div className="one__wrapper">
                 <h3 className="one__h3">Disabled state</h3>
-                <ButtonDefault onClick={handleDefaultClick} disabled>
+                <ButtonSolid onClick={handleDefaultClick} disabled>
                   Disabled
-                </ButtonDefault>
+                </ButtonSolid>
               </div>
             </div>
           </section>
@@ -56,13 +49,13 @@ export default function OnePage() {
             <div className="one__buttons">
               <div className="one__wrapper">
                 <h3 className="one__h3">Default state</h3>
-                <ButtonOutline onClick={handleDefaultClick}>
+                <ButtonOutline onClick={handleOutlineClick}>
                   Default
                 </ButtonOutline>
               </div>
               <div className="one__wrapper">
                 <h3 className="one__h3">Disabled state</h3>
-                <ButtonOutline onClick={handleDefaultClick} disabled>
+                <ButtonOutline onClick={handleOutlineClick} disabled>
                   Disabled
                 </ButtonOutline>
               </div>
@@ -73,20 +66,6 @@ export default function OnePage() {
 
           <section className="one-section"></section>
           <section className="one-section"></section>
-
-          <main className="one">
-            <div className="one__buttons">
-              <ButtonDefault onClick={handleDefaultClick}>
-                Default
-              </ButtonDefault>
-              <ButtonOutline onClick={handleOutlineClick}>
-                Outline
-              </ButtonOutline>
-              <ButtonGradient onClick={handleGradientClick}>
-                Gradient
-              </ButtonGradient>
-            </div>
-          </main>
         </div>
       </WrapperOnePage>
     </>
