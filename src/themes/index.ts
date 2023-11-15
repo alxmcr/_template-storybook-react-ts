@@ -6,14 +6,14 @@ import { lightButtonStyles } from './light';
 const lightTheme: AppStyledTheme = {
   name: 'light',
   background: colors.light,
-  text: colors.blue[950],
+  text: colors.grape[950],
   button: lightButtonStyles,
 };
 
 const darkTheme: AppStyledTheme = {
   name: 'dark',
   background: '#000',
-  text: colors.blue[300],
+  text: colors.grape[300],
   button: darkButtonStyles,
 };
 

@@ -7,7 +7,7 @@ export type ButtonBaseProps = {
 };
 
 export const ButtonBase = styled.button<ButtonBaseProps>`
-  padding: 8px 16px;
+  padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 4px;
   font-size: 16px;
