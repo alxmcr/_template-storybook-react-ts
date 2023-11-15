@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { AppButton } from '.';
+import { AppButton } from './ButtonBase';
 
 export const ButtonOutline = styled(AppButton)`
   background-color: ${(props) => props.theme.button.outline.default.background};

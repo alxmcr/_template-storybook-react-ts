@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { AppButton } from '.';
+import { ButtonBase } from './ButtonBase';
 
-export const ButtonDefault = styled(AppButton)`
+export const ButtonDefault = styled(ButtonBase)`
   background-color: ${(props) => props.theme.button.solid.default.background};
   border: 1px solid ${(props) => props.theme.button.solid.default.borderColor};
   color: ${(props) => props.theme.button.solid.default.text};

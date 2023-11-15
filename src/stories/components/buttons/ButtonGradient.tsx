@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { AppButton } from '.';
+import { AppButton } from './ButtonBase';
 
 export const ButtonGradient = styled(AppButton)`
   background: linear-gradient(
