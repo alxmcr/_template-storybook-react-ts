@@ -1,4 +1,4 @@
-import { ButtonDefault } from './ButtonDefault';
+import { ButtonDefault } from './ButtonDefault/ButtonDefault';
 
 type AppButtonProps = {
   disabled?: boolean;

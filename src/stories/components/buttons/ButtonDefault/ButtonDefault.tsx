@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ButtonBase } from './ButtonBase';
+import { ButtonBase } from '../ButtonBase';
 
 export const ButtonDefault = styled(ButtonBase)`
   background-color: ${(props) => props.theme.button.solid.default.background};
