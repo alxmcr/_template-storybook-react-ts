@@ -1,4 +1,4 @@
-import { ButtonDefault } from './ButtonDefault/ButtonDefault';
+import { ButtonDefault } from './ButtonDefault';
 
 type AppButtonProps = {
   disabled?: boolean;
@@ -6,7 +6,7 @@ type AppButtonProps = {
   children: React.ReactNode;
 };
 
-export default function AppButtonDefault({
+export default function AppButtonDefaultxxxxx({
   disabled = false,
   onClick,
   children,

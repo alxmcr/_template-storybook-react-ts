@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import AppButtonDefault from '../../stories/components/buttons/AppButtonDefault';
+import AppButtonDefaultxxxxx from '../../stories/components/buttons/AppButtonDefault';
+import { ButtonDefault } from '../../stories/components/buttons/ButtonDefault';
 import { ButtonGradient } from '../../stories/components/buttons/ButtonGradient';
 import { ButtonOutline } from '../../stories/components/buttons/ButtonOutline';
 import AppHeader from '../../stories/components/sections/AppHeader';
@@ -16,6 +17,14 @@ export default function OnePage() {
     console.log('default click');
   };
 
+  const handleOutlineClick = () => {
+    console.log('Outline click');
+  };
+
+  const handleGradientClick = () => {
+    console.log('Gradient click');
+  };
+
   return (
     <>
       <WrapperOnePage>
@@ -28,15 +37,15 @@ export default function OnePage() {
             <div className="one__buttons">
               <div className="one__wrapper">
                 <h3 className="one__h3">Default state</h3>
-                <AppButtonDefault onClick={handleDefaultClick}>
+                <AppButtonDefaultxxxxx onClick={handleDefaultClick}>
                   Default
-                </AppButtonDefault>
+                </AppButtonDefaultxxxxx>
               </div>
               <div className="one__wrapper">
                 <h3 className="one__h3">Disabled state</h3>
-                <AppButtonDefault onClick={handleDefaultClick} disabled>
+                <AppButtonDefaultxxxxx onClick={handleDefaultClick} disabled>
                   Disabled
-                </AppButtonDefault>
+                </AppButtonDefaultxxxxx>
               </div>
             </div>
           </section>
@@ -48,11 +57,15 @@ export default function OnePage() {
 
           <main className="one">
             <div className="one__buttons">
-              <AppButtonDefault onClick={handleDefaultClick}>
+              <ButtonDefault onClick={handleDefaultClick}>
                 Default
-              </AppButtonDefault>
-              <ButtonOutline>Outline</ButtonOutline>
-              <ButtonGradient>Gradient</ButtonGradient>
+              </ButtonDefault>
+              <ButtonOutline onClick={handleOutlineClick}>
+                Outline
+              </ButtonOutline>
+              <ButtonGradient onClick={handleGradientClick}>
+                Gradient
+              </ButtonGradient>
             </div>
           </main>
         </div>
