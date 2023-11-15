@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleThemeContext } from '../../../../providers/StyledThemeProvider/StyledThemeContext';
-import { ButtonDefault } from '../../buttons/ButtonDefault';
+import { ButtonDefault } from '../../buttons/ButtonSolid';
 import './ThemeToggle.scss';
 
 export default function ThemeToggle() {

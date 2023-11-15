@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ButtonDefault } from '../../stories/components/buttons/ButtonDefault';
+import { ButtonDefault } from '../../stories/components/buttons/ButtonSolid';
 import { ButtonGradient } from '../../stories/components/buttons/ButtonGradient';
 import { ButtonOutline } from '../../stories/components/buttons/ButtonOutline';
 import AppHeader from '../../stories/components/sections/AppHeader';

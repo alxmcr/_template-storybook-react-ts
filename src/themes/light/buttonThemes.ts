@@ -24,6 +24,7 @@ export const lightThemeBtnSolid: StylesButtonStates = {
     background: colors.blue[200],
     borderColor: colors.blue[200],
     text: colors.blue[700],
+    opacity: 0.5,
   },
 };
 
@@ -47,6 +48,7 @@ export const lightThemeBtnOutline: StylesButtonStates = {
     background: 'transparent',
     borderColor: colors.blue[700],
     text: colors.blue[700],
+    opacity: 0.5,
   },
 };
 

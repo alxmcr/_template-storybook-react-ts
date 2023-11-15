@@ -26,5 +26,6 @@ export const ButtonOutline = styled(ButtonBase)`
     border: 1px solid
       ${(props) => props.theme.button.outline.disabled.borderColor};
     color: ${(props) => props.theme.button.outline.disabled.text};
+    opacity: ${(props) => props.theme.button.solid.opacity};
   }
 `;

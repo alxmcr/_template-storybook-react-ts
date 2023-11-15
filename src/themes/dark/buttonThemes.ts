@@ -21,6 +21,7 @@ export const darkThemeBtnSolid: StylesButtonStates = {
     background: colors.blue[800],
     borderColor: colors.blue[800],
     text: colors.blue[100],
+    opacity: 0.5,
   },
 };
 
@@ -44,5 +45,6 @@ export const darkThemeBtnOutline: StylesButtonStates = {
     background: 'transparent',
     borderColor: colors.blue[300],
     text: colors.blue[300],
+    opacity: 0.5,
   },
 };

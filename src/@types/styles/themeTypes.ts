@@ -2,6 +2,7 @@ export type StylesButtonByState = {
   background: string;
   text: string;
   borderColor: string;
+  opacity?: number;
 };
 
 export type StylesButtonStates = {
