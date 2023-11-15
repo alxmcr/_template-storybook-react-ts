@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { AppButton } from './ButtonBase';
+import { ButtonBase } from './ButtonBase';
 
-export const ButtonGradient = styled(AppButton)`
+export const ButtonGradient = styled(ButtonBase)`
   background: linear-gradient(
     135deg,
     ${(props) =>

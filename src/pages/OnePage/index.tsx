@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ButtonDefault } from '../../stories/components/buttons/ButtonDefault';
+import AppButtonDefault from '../../stories/components/buttons/AppButtonDefault';
 import { ButtonGradient } from '../../stories/components/buttons/ButtonGradient';
 import { ButtonOutline } from '../../stories/components/buttons/ButtonOutline';
 import AppHeader from '../../stories/components/sections/AppHeader';
@@ -12,6 +12,10 @@ const WrapperOnePage = styled.div`
 `;
 
 export default function OnePage() {
+  const handleDefaultClick = () => {
+    console.log('default click');
+  };
+
   return (
     <>
       <WrapperOnePage>
@@ -19,7 +23,9 @@ export default function OnePage() {
         <main className="one">
           <h1 className="one__title">One</h1>
           <div className="one__buttons">
-            <ButtonDefault>Default</ButtonDefault>
+            <AppButtonDefault onClick={handleDefaultClick}>
+              Default
+            </AppButtonDefault>
             <ButtonOutline>Outline</ButtonOutline>
             <ButtonGradient>Gradient</ButtonGradient>
           </div>
