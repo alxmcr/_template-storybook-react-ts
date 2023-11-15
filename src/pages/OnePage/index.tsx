@@ -20,16 +20,42 @@ export default function OnePage() {
     <>
       <WrapperOnePage>
         <AppHeader />
-        <main className="one">
+        <div className="one-container">
           <h1 className="one__title">One</h1>
-          <div className="one__buttons">
-            <AppButtonDefault onClick={handleDefaultClick}>
-              Default
-            </AppButtonDefault>
-            <ButtonOutline>Outline</ButtonOutline>
-            <ButtonGradient>Gradient</ButtonGradient>
-          </div>
-        </main>
+
+          <section className="one-section">
+            <h2 className="one__subtitle">Default button</h2>
+            <div className="one__buttons">
+              <div className="one__wrapper">
+                <h3 className="one__h3">Default state</h3>
+                <AppButtonDefault onClick={handleDefaultClick}>
+                  Default
+                </AppButtonDefault>
+              </div>
+              <div className="one__wrapper">
+                <h3 className="one__h3">Disabled state</h3>
+                <AppButtonDefault onClick={handleDefaultClick} disabled>
+                  Disabled
+                </AppButtonDefault>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
+          <section className="one-section"></section>
+          <section className="one-section"></section>
+
+          <main className="one">
+            <div className="one__buttons">
+              <AppButtonDefault onClick={handleDefaultClick}>
+                Default
+              </AppButtonDefault>
+              <ButtonOutline>Outline</ButtonOutline>
+              <ButtonGradient>Gradient</ButtonGradient>
+            </div>
+          </main>
+        </div>
       </WrapperOnePage>
     </>
   );
