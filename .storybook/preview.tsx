@@ -1,6 +1,7 @@
+import type { Preview } from '@storybook/react';
+import { themes } from '@storybook/theming';
 import React from 'react';
 import StyledThemeProvider from '../src/providers/StyledThemeProvider';
-import type { Preview } from '@storybook/react';
 
 const preview: Preview = {
   decorators: [
@@ -17,6 +18,9 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+    },
+    docs: {
+      theme: themes.dark,
     },
   },
 };
