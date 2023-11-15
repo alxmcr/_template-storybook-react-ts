@@ -80,5 +80,6 @@ export const lightThemeBtnGradient: StylesButtonGradientStates = {
       gradientStart: colors.grape[300],
     },
     text: colors.grape[700],
+    opacity: 0.5,
   },
 };

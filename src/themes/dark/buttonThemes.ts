@@ -1,4 +1,7 @@
-import { StylesButtonStates } from '../../@types/styles/themeTypes';
+import {
+  StylesButtonGradientStates,
+  StylesButtonStates,
+} from '../../@types/styles/themeTypes';
 import { colors } from '../colors';
 
 export const darkThemeBtnSolid: StylesButtonStates = {
@@ -45,6 +48,38 @@ export const darkThemeBtnOutline: StylesButtonStates = {
     background: 'transparent',
     borderColor: colors.grape[300],
     text: colors.grape[300],
+    opacity: 0.5,
+  },
+};
+
+export const darkThemeBtnGradient: StylesButtonGradientStates = {
+  default: {
+    gradientColors: {
+      gradientEnd: colors.grape[300],
+      gradientStart: colors.grape[500],
+    },
+    text: colors.grape[950],
+  },
+  hover: {
+    gradientColors: {
+      gradientEnd: colors.grape[200],
+      gradientStart: colors.grape[400],
+    },
+    text: colors.grape[950],
+  },
+  active: {
+    gradientColors: {
+      gradientEnd: colors.grape[400],
+      gradientStart: colors.grape[600],
+    },
+    text: colors.grape[950],
+  },
+  disabled: {
+    gradientColors: {
+      gradientEnd: colors.grape[700],
+      gradientStart: colors.grape[900],
+    },
+    text: colors.grape[100],
     opacity: 0.5,
   },
 };

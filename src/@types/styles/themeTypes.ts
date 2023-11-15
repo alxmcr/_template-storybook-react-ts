@@ -18,6 +18,7 @@ export type StylesButtonGradientByState = {
     gradientStart: string;
     gradientEnd: string;
   };
+  opacity?: number;
 };
 
 export type StylesButtonGradientStates = {
