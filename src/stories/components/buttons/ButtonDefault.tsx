@@ -12,6 +12,12 @@ export const ButtonDefault = styled(ButtonBase)`
     color: ${(props) => props.theme.button.solid.hover.text};
   }
 
+  &:hover {
+    background-color: ${(props) => props.theme.button.solid.active.background};
+    border: 1px solid ${(props) => props.theme.button.solid.active.borderColor};
+    color: ${(props) => props.theme.button.solid.active.text};
+  }
+
   &:disabled {
     background-color: ${(props) =>
       props.theme.button.solid.disabled.background};
