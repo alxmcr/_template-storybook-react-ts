@@ -8,6 +8,9 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
+  argTypes: {
+    onClick: { action: 'clicked' },
+  },
 } satisfies Meta<typeof ButtonDefault>;
 
 export default meta;
