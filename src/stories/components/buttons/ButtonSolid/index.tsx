@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { ButtonBase } from './ButtonBase';
+import { ButtonBase } from '../ButtonBase';
 
-export const ButtonDefault = styled(ButtonBase)`
+export const ButtonSolid = styled(ButtonBase)`
   background-color: ${(props) => props.theme.button.solid.default.background};
   border: 1px solid ${(props) => props.theme.button.solid.default.borderColor};
   color: ${(props) => props.theme.button.solid.default.text};
@@ -24,5 +24,6 @@ export const ButtonDefault = styled(ButtonBase)`
     border: 1px solid
       ${(props) => props.theme.button.solid.disabled.borderColor};
     color: ${(props) => props.theme.button.solid.disabled.text};
+    opacity: ${(props) => props.theme.button.solid.disabled.opacity};
   }
 `;

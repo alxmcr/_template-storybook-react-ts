@@ -1,6 +1,18 @@
 .one__buttons {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.one-container {
+  padding: 1rem;
+}
+
+.one-section {
+  padding: 0.35rem;
+}
+
+.one__subtitle {
+  margin: 0;
 }

@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
-export const ButtonBase = styled.button`
-  padding: 8px 16px;
+export type ButtonBaseProps = {
+  disabled?: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+};
+
+export const ButtonBase = styled.button<ButtonBaseProps>`
+  padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 4px;
   font-size: 16px;
