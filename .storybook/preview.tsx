@@ -3,14 +3,14 @@ import { themes } from '@storybook/theming';
 import React from 'react';
 import StyledThemeProvider from '../src/providers/StyledThemeProvider';
 
+const withStyledTheme = (Story) => (
+  <StyledThemeProvider>
+    <Story />
+  </StyledThemeProvider>
+);
+
 const preview: Preview = {
-  decorators: [
-    (Story) => (
-      <StyledThemeProvider>
-        <Story />
-      </StyledThemeProvider>
-    ),
-  ],
+  decorators: [withStyledTheme],
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
