@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { ButtonDefault } from './ButtonDefault';
 
 const meta = {
-  title: 'atoms/buttons/ButtonDefault',
+  title: 'atoms/buttons/Button',
   component: ButtonDefault,
   parameters: {
     layout: 'centered',
@@ -13,10 +13,21 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {};
+export const Default: Story = {};
 
-Primary.args = {
+Default.args = {
+  children: 'Default button',
   onClick: () => {
-    console.log('primary...');
+    console.log('Default...');
+  },
+};
+
+export const Disabled: Story = {};
+
+Disabled.args = {
+  disabled: true,
+  children: 'Disabled button',
+  onClick: () => {
+    console.log('Disabled...');
   },
 };
