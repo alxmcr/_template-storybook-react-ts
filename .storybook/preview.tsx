@@ -1,10 +1,7 @@
 import type { Preview } from '@storybook/react';
-import { themes } from '@storybook/theming';
-import React from 'react';
-import StyledThemeProvider from '../src/providers/StyledThemeProvider';
 
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 /* TODO: update import for your custom theme configurations */
 import { darkTheme, lightTheme } from '../src/themes';
@@ -16,21 +13,14 @@ const GlobalStyles = createGlobalStyle`
   }
   `;
 
-const withStyledTheme = (Story) => (
-  <StyledThemeProvider>
-    <Story />
-  </StyledThemeProvider>
-);
-
 const preview: Preview = {
   decorators: [
-    withStyledTheme,
     withThemeFromJSXProvider({
       themes: {
         light: lightTheme,
         dark: darkTheme,
       },
-      defaultTheme: 'light',
+      defaultTheme: 'dark',
       Provider: ThemeProvider,
       GlobalStyles,
     }),
@@ -44,7 +34,7 @@ const preview: Preview = {
       },
     },
     docs: {
-      theme: themes.dark,
+      autodocs: 'tag',
     },
   },
 };
