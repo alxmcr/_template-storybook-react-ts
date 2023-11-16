@@ -1,6 +1,7 @@
 import type { Preview } from '@storybook/react';
 
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
+import { themes } from '@storybook/theming';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 /* TODO: update import for your custom theme configurations */
@@ -35,6 +36,7 @@ const preview: Preview = {
     },
     docs: {
       autodocs: 'tag',
+      theme: themes.dark,
     },
   },
 };
